@@ -6,6 +6,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.d3if0028.galerihewan.databinding.ListItemBinding
 
 class MainAdapter(private val data: List<Hewan>) : RecyclerView.Adapter<MainAdapter.ViewHolder>(){
+
+    //membuat recycleview
     class ViewHolder(private  val binding: ListItemBinding) : RecyclerView.ViewHolder(binding.root){
         fun bind(hewan: Hewan) = with(binding){
             tvNama.text = hewan.nama

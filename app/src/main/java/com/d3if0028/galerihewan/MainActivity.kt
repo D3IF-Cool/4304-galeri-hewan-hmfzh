@@ -23,7 +23,7 @@ class MainActivity: AppCompatActivity() {
         }
 
     }
-
+// Membuat data
     private fun getData(): List<Hewan> {
         return listOf(
                 Hewan("Angsa", "Cygnus Olor", R.drawable.angsa,"Jenis: Mamalia"),
