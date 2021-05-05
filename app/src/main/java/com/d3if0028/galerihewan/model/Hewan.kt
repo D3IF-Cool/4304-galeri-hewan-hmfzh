@@ -1,4 +1,4 @@
-package com.d3if0028.galerihewan
+package com.d3if0028.galerihewan.model
 
 // sebagai constructor
 data class Hewan (
