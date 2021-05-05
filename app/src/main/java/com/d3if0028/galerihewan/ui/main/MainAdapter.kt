@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.d3if0028.galerihewan.model.Hewan
 import com.d3if0028.galerihewan.databinding.ListItemBinding
 
-class MainAdapter(private val data: List<Hewan>) : RecyclerView.Adapter<MainAdapter.ViewHolder>(){
+class MainAdapter : RecyclerView.Adapter<MainAdapter.ViewHolder>() {
 
     //membuat recycleview
     class ViewHolder(private  val binding: ListItemBinding) : RecyclerView.ViewHolder(binding.root){
@@ -30,5 +30,13 @@ class MainAdapter(private val data: List<Hewan>) : RecyclerView.Adapter<MainAdap
 
     override fun getItemCount(): Int {
        return data.size
+    }
+
+    private val data = mutableListOf<Hewan>()
+
+    fun updateData(newData: List<Hewan>) {
+        data.clear()
+        data.addAll(newData)
+        notifyDataSetChanged()
     }
 }
