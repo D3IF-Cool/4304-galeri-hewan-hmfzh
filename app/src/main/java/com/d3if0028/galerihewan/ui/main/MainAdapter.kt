@@ -14,7 +14,6 @@ class MainAdapter : RecyclerView.Adapter<MainAdapter.ViewHolder>() {
             tvNama.text = hewan.nama
             tvLatin.text = hewan.namaLatin
             imageView.setImageResource(hewan.imageResId)
-            tvJenis.text = hewan.jenis
         }
     }
 

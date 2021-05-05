@@ -13,12 +13,12 @@ import com.d3if0028.galerihewan.R
 import com.d3if0028.galerihewan.databinding.FragmentMainBinding
 
 class MainFragment :Fragment() {
-    private lateinit var binding: FragmentMainBinding
-    private lateinit var myAdapter: MainAdapter
-
     private val viewModel: MainViewModel by lazy {
         ViewModelProvider(this).get(MainViewModel::class.java)
     }
+
+    private lateinit var binding: FragmentMainBinding
+    private lateinit var myAdapter: MainAdapter
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
